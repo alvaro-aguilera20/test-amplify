@@ -5,7 +5,7 @@ const awsconfig = {
       userPoolClientId: '', // Reemplaza con tu App Client ID
       signUpVerificationMethod: 'code',
       loginWith: {
-        email: true
+        username: true
       }
     }
   },
