@@ -1,8 +1,8 @@
 const awsconfig = {
   Auth: {
     Cognito: {
-      userPoolId: '', // Reemplaza con tu User Pool ID
-      userPoolClientId: '', // Reemplaza con tu App Client ID
+      userPoolId: 'XXXXXXXXXXXXXXX', // Reemplaza con tu User Pool ID
+      userPoolClientId: 'XXXXXXXXXXXXXXXXXXXXX', // Reemplaza con tu App Client ID
       signUpVerificationMethod: 'code',
       loginWith: {
         username: true
