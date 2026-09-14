@@ -1,10 +1,14 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+import { Amplify } from 'aws-amplify'
+import awsconfig from './aws-exports'
+import '@aws-amplify/ui-react/styles.css' // Estilos base para el componente de Login
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+Amplify.configure(awsconfig)
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
     <App />
-  </StrictMode>,
+  </React.StrictMode>,
 )
